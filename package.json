@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "JavaScript Utility Modules and Extensions",
 	"type": "module",
+	"publishConfig": {
+    "access": "public"
+  },
 	"exports": {
 		".": { "import": "./modules.js" },
 		"./ext/*": { "import": "./src/ext/*" }
