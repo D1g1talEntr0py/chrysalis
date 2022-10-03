@@ -1,0 +1,17 @@
+{
+	"env": {
+		"browser": true,
+		"es2022": true,
+		"node": true
+	},
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": ["compat"],
+	"extends": ["eslint:recommended", "plugin:compat/recommended"],
+	"overrides": [],
+	"rules": {
+		"no-prototype-builtins": 0
+	}
+}

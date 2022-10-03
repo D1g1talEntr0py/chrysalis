@@ -1,0 +1,31 @@
+{
+  "name": "@d1g1tal/chrysalis",
+  "version": "1.0.0",
+  "description": "JavaScript Utility Modules and Extensions",
+	"type": "module",
+	"exports": {
+		".": { "import": "./modules.js" },
+		"./ext/*": { "import": "./src/ext/*" }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+	"repository": {
+    "type": "git",
+    "url": "git+https://github.com/D1g1talEntr0py/chrysalis.git"
+  },
+  "author": "Jason DiMeo",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "eslint-plugin-compat": "^4.0.2"
+  },
+	"browserslist": [
+		">= 0.5%",
+		"last 2 major versions",
+		"Firefox ESR",
+		"not dead",
+		"not ios_saf < 15",
+		"not op_mini all"
+	]
+}
