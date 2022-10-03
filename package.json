@@ -1,6 +1,6 @@
 {
   "name": "@d1g1tal/chrysalis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript Utility Modules and Extensions",
 	"type": "module",
 	"publishConfig": {
