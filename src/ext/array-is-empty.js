@@ -1,7 +1,7 @@
 import _arrayIsEmpty from '../esm/array-is-empty.js';
-import defineProperties from '../esm/define-properties.js';
+import _defineProperties from '../esm/define-properties.js';
 
-defineProperties(Array.prototype, {
+_defineProperties(Array.prototype, {
 	/**
 	 * Checks to see if the array is empty
 	 *
@@ -10,4 +10,4 @@ defineProperties(Array.prototype, {
 	isEmpty() {
 		return _arrayIsEmpty(this);
 	}
-})
+});

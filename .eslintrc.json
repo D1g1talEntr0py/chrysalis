@@ -4,14 +4,31 @@
 		"es2022": true,
 		"node": true
 	},
-	"parserOptions": {
-		"ecmaVersion": "latest",
-		"sourceType": "module"
-	},
 	"plugins": ["compat"],
 	"extends": ["eslint:recommended", "plugin:compat/recommended"],
 	"overrides": [],
+	"parserOptions": {
+		"ecmaVersion": 2022,
+		"sourceType": "module"
+	},
 	"rules": {
-		"no-prototype-builtins": 0
+		"no-prototype-builtins": "off",
+		"indent": [
+			"error",
+			"tab",
+			{ "SwitchCase": 1 }
+		],
+		"linebreak-style": [
+			"error",
+			"unix"
+		],
+		"quotes": [
+			"error",
+			"single"
+		],
+		"semi": [
+			"error",
+			"always"
+		]
 	}
 }

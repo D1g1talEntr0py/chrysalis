@@ -1,7 +1,7 @@
-import defineProperties from '../esm/define-properties.js';
+import _defineProperties from '../esm/define-properties.js';
 import _objectMerge from '../esm/object-merge.js';
 
-defineProperties(Object, {
+_defineProperties(Object, {
 	/**
 	 * Performs a deep merge of multiple objects.
 	 * 

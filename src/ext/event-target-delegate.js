@@ -1,7 +1,7 @@
-import defineProperties from '../esm/define-properties.js';
+import _defineProperties from '../esm/define-properties.js';
 import _delegateEventListener from '../esm/event-target-delegate.js';
 
-defineProperties(EventTarget.prototype, {
+_defineProperties(EventTarget.prototype, {
 	/**
 	 * Delegates event handling by selector.
 	 *

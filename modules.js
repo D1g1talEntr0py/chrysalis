@@ -13,3 +13,5 @@ export { default as _booleanParse } from './src/esm/boolean-parse.js';
 export { default as _toggleElementClasses } from './src/esm/element-toggle-classes.js';
 export { default as _delegateEventListener } from './src/esm/event-target-delegate.js';
 export { default as _selectElementPopulate } from './src/esm/select-element-populate.js';
+export { default as _defineProperties } from './src/esm/define-properties.js';
+export { injectScript, injectLink, injectStyleSheet } from './src/esm/inject-tag.js';

@@ -1,7 +1,7 @@
-import _booleanParse from "../esm/boolean-parse.js";
-import defineProperties from "../esm/define-properties.js";
+import _booleanParse from '../esm/boolean-parse.js';
+import _defineProperties from '../esm/define-properties.js';
 
-defineProperties(Boolean, {
+_defineProperties(Boolean, {
 	/**
 	 * Parses a string value to a boolean value.
 	 *

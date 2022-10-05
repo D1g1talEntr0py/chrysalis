@@ -1,7 +1,7 @@
-import defineProperties from '../esm/define-properties.js';
+import _defineProperties from '../esm/define-properties.js';
 import _mapIsEmpty from '../esm/map-is-empty.js';
 
-defineProperties(Map.prototype, {
+_defineProperties(Map.prototype, {
 	/**
 	 * Checks to see if the {@link Map} is empty.
 	 *

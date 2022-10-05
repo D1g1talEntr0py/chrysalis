@@ -1,7 +1,7 @@
-import defineProperties from '../esm/define-properties.js';
+import _defineProperties from '../esm/define-properties.js';
 import StringTemplate from '../esm/string-template.js';
 
-defineProperties(String, {
+_defineProperties(String, {
 	/**
 	 * Creates an immutable, reusable string template which can be formatted with different data.
 	 * 

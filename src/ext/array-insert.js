@@ -1,7 +1,7 @@
 import _arrayInsert from '../esm/array-insert.js';
-import defineProperties from '../esm/define-properties.js';
+import _defineProperties from '../esm/define-properties.js';
 
-defineProperties(Array.prototype, {
+_defineProperties(Array.prototype, {
 	/**
 	 * Inserts the entry in a sorted array in the correct position. The array must be sorted in ascending order to work
 	 *

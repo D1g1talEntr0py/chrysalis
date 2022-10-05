@@ -1,7 +1,8 @@
-import _isType from './object-is-type.js';
-
+export default _toggleElementClasses;
+export type ClassListEntry = {
+    [x: string]: boolean;
+};
 /** @typedef {Object.<string, boolean>} ClassListEntry */
-
 /**
  * Toggles a list of classes utilizing the "force" parameter to either add or remove the class
  * { 'foo': true } - Will add the 'foo' class if it does not exist
@@ -10,11 +11,4 @@ import _isType from './object-is-type.js';
  * @param {Element} element The {@link Element} to toggle classes.
  * @param {...(ClassListEntry|string)} classListEntries
  */
-const _toggleElementClasses = (element, ...classListEntries) => {
-	classListEntries.forEach((classEntry) => {
-		const [cssClass, force] = _isType(classEntry, String) ? [classEntry, undefined] : Object.entries(classEntry).at(0);
-		element.classList.toggle(cssClass, force);
-	});
-};
-
-export default _toggleElementClasses;
+declare function _toggleElementClasses(element: Element, ...classListEntries: (ClassListEntry | string)[]): void;

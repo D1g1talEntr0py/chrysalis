@@ -1,24 +1,31 @@
 {
   "name": "@d1g1tal/chrysalis",
-  "version": "1.0.1",
+  "version": "1.1.0",
+	"author": "Jason DiMeo",
+  "license": "MIT",
   "description": "JavaScript Utility Modules and Extensions",
-	"type": "module",
-	"publishConfig": {
-    "access": "public"
-  },
-	"exports": {
-		".": { "import": "./modules.js" },
-		"./ext/*": { "import": "./src/ext/*" }
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
 	"repository": {
     "type": "git",
     "url": "git+https://github.com/D1g1talEntr0py/chrysalis.git"
   },
-  "author": "Jason DiMeo",
-  "license": "MIT",
+	"publishConfig": {
+    "access": "public"
+  },
+	"type": "module",
+	"types": "./modules.d.ts",
+	"exports": {
+		".": { "import": "./modules.js" },
+		"./ext/*": { "import": "./src/ext/*" }
+  },
+	"files": [
+		"/src/**/*",
+		"./modules.js",
+		"./extensions.js"
+	],
+  "scripts": {
+		"lint": "eslint --ext .js --ignore-path .gitignore .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "eslint": "^8.24.0",
     "eslint-plugin-compat": "^4.0.2"
@@ -30,5 +37,8 @@
 		"not dead",
 		"not ios_saf < 15",
 		"not op_mini all"
+	],
+	"keywords": [
+		"utilities"
 	]
 }

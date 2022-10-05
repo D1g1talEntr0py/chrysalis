@@ -1,7 +1,7 @@
-import defineProperties from '../esm/define-properties.js';
+import _defineProperties from '../esm/define-properties.js';
 import _selectElementPopulate from '../esm/select-element-populate.js';
 
-defineProperties(HTMLSelectElement.prototype, {
+_defineProperties(HTMLSelectElement.prototype, {
 	/**
 	 * Populates a {@link HTMLSelectElement} with an array of {@link HTMLOptionElement} objects.
 	 * 
@@ -10,5 +10,4 @@ defineProperties(HTMLSelectElement.prototype, {
 	populate(options) {
 		_selectElementPopulate(this, options);
 	}
-})
-
+});

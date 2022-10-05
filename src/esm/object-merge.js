@@ -23,6 +23,6 @@ const _objectMerge = (...objects) => {
 
 		return prev;
 	}, {});
-}
+};
 
 export default _objectMerge;

@@ -1,7 +1,9 @@
-import defineProperties from '../esm/define-properties.js';
+import _defineProperties from '../esm/define-properties.js';
 import _toggleElementClasses from '../esm/element-toggle-classes.js';
 
-defineProperties(Element.prototype, {
+/** @typedef {Object.<string, boolean>} ClassListEntry */
+
+_defineProperties(Element.prototype, {
 	/**
 	 * Toggles a list of classes utilizing the "force" parameter to either add or remove the class
 	 * 

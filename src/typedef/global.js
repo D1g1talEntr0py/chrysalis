@@ -1,1 +1,0 @@
-/** @typedef {Object.prototype.constructor} Type */

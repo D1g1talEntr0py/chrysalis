@@ -1,7 +1,7 @@
-import defineProperties from '../esm/define-properties.js';
+import _defineProperties from '../esm/define-properties.js';
 import _stringIsEmpty from '../esm/string-is-empty.js';
 
-defineProperties(String.prototype, {
+_defineProperties(String.prototype, {
 	/**
 	 * Checks to see if the string is empty.
 	 *

@@ -1,7 +1,7 @@
 import _arrayRemove from '../esm/array-remove.js';
-import defineProperties from '../esm/define-properties.js';
+import _defineProperties from '../esm/define-properties.js';
 
-defineProperties(Array.prototype, {
+_defineProperties(Array.prototype, {
 	/**
 	 * Removes an item from an array at a given position
 	 * By John Resig (MIT Licensed)
@@ -13,4 +13,4 @@ defineProperties(Array.prototype, {
 	remove(from, to) {
 		return _arrayRemove(this, from, to);
 	}
-})
+});

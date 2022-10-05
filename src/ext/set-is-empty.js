@@ -1,7 +1,7 @@
-import defineProperties from '../esm/define-properties.js';
+import _defineProperties from '../esm/define-properties.js';
 import _setIsEmpty from '../esm/set-is-empty.js';
 
-defineProperties(Set.prototype, {
+_defineProperties(Set.prototype, {
 	/**
 	 * Checks to see if the {@link Set} is empty.
 	 *
