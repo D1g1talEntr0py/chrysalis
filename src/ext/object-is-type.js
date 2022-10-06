@@ -6,7 +6,9 @@ import _isType from '../esm/object-is-type.js';
 _defineProperties(Object, {
 	/**
 	 * Gets the object type for the provided instance.
-	 * 
+	 *
+	 * @memberof Object
+	 * @name isType
 	 * @param {*} object The instance to compare.
 	 * @param {Type} type The type to compare.
 	 * @returns {boolean} true if the provided instance is the type provided, false otherwise.

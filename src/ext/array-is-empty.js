@@ -5,6 +5,8 @@ _defineProperties(Array.prototype, {
 	/**
 	 * Checks to see if the array is empty
 	 *
+	 * @memberof Array.prototype
+	 * @name isEmpty
 	 * @returns {boolean} true if the array is empty, false otherwise.
 	 */
 	isEmpty() {

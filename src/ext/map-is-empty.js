@@ -5,6 +5,8 @@ _defineProperties(Map.prototype, {
 	/**
 	 * Checks to see if the {@link Map} is empty.
 	 *
+	 * @memberof Map.prototype
+	 * @name isEmpty
 	 * @returns {boolean} true if the {@link Map} is empty, false otherwise.
 	 */
 	isEmpty() {

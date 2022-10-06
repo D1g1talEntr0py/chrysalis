@@ -5,13 +5,13 @@ _defineProperties(EventTarget.prototype, {
 	/**
 	 * Delegates event handling by selector.
 	 *
-	 * @param {string} eventType
-	 * @param {string} selector
-	 * @param {EventListener} listener
-	 * @param {boolean|AddEventListenerOptions} [options]
-	 * @memberOf EventTarget.prototype
+	 * @memberof EventTarget.prototype
 	 * @name delegateEventListener
-	 * @return {EventListener}
+	 * @param {string} eventType The type of event.
+	 * @param {string} selector The selector to filter {@link HTMLElement} objects.
+	 * @param {EventListener} listener The event listener function.
+	 * @param {boolean|AddEventListenerOptions} [options] The options for attaching the {@link EventListener}.
+	 * @returns {EventListener} The event listener use to filter and call the supplied listener.
 	 */
 	delegateEventListener(eventType, selector, listener, options) {
 		return _delegateEventListener(this, eventType, selector, listener, options);

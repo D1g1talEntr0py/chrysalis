@@ -6,7 +6,9 @@ import _type from '../esm/object-type.js';
 _defineProperties(Object.prototype, {
 	/**
 	 * Gets the object type for the current instance.
-	 * 
+	 *
+	 * @memberof Object.prototype
+	 * @name type
 	 * @returns {Type} The object type
 	 */
 	type() {

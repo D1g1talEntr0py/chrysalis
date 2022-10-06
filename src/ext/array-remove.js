@@ -6,6 +6,8 @@ _defineProperties(Array.prototype, {
 	 * Removes an item from an array at a given position
 	 * By John Resig (MIT Licensed)
 	 *
+	 * @memberof Array.prototype
+	 * @name remove
 	 * @param {number} from Starting position
 	 * @param {number} [to] Ending position
 	 * @returns {number} The new length of the array

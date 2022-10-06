@@ -5,6 +5,8 @@ _defineProperties(String.prototype, {
 	/**
 	 * Checks to see if the string is empty.
 	 *
+	 * @memberof String.prototype
+	 * @name isEmpty
 	 * @returns {boolean} true if the string is empty, false otherwise.
 	 */
 	isEmpty() {

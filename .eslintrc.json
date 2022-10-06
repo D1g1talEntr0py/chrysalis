@@ -4,8 +4,8 @@
 		"es2022": true,
 		"node": true
 	},
-	"plugins": ["compat"],
-	"extends": ["eslint:recommended", "plugin:compat/recommended"],
+	"plugins": ["compat", "jsdoc"],
+	"extends": ["eslint:recommended", "plugin:compat/recommended", "plugin:jsdoc/recommended"],
 	"overrides": [],
 	"parserOptions": {
 		"ecmaVersion": 2022,
@@ -30,5 +30,22 @@
 			"error",
 			"always"
 		]
+	},
+	"settings": {
+		"jsdoc": {
+			"preferredTypes": {
+				"object": "Object",
+				"PropertyKey": "PropertyKey",
+				"PropertyDescriptor": "PropertyDescriptor",
+				"EventListener": "EventListener",
+				"AddEventListenerOptions": "AddEventListenerOptions"
+			},
+			"tagNamePreference": {
+				"augments": {
+					"message": "@extends is to be used over @augments as it is more evocative of classes than @augments",
+					"replacement": "extends"
+				}
+			}
+		}
 	}
 }

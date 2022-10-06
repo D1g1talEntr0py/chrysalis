@@ -1,45 +1,50 @@
 {
   "name": "@d1g1tal/chrysalis",
-  "version": "1.1.1",
-	"author": "Jason DiMeo",
+  "version": "1.1.2",
+  "author": "Jason DiMeo",
   "license": "MIT",
   "description": "JavaScript Utility Modules and Extensions",
-	"repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/D1g1talEntr0py/chrysalis.git"
   },
-	"publishConfig": {
+  "publishConfig": {
     "access": "public"
   },
-	"type": "module",
-	"types": "./modules.d.ts",
-	"exports": {
-		".": { "import": "./modules.js" },
-		"./ext/*": { "import": "./src/ext/*" }
+  "type": "module",
+  "types": "./modules.d.ts",
+  "exports": {
+    ".": {
+      "import": "./modules.js"
+    },
+    "./ext/*": {
+      "import": "./src/ext/*"
+    }
   },
-	"files": [
-		"/src/**/*",
-		"./modules.js",
-		"./modules.d.ts",
-		"./extensions.js"
-	],
+  "files": [
+    "/src/**/*",
+    "./modules.js",
+    "./modules.d.ts",
+    "./extensions.js"
+  ],
   "scripts": {
-		"lint": "eslint --ext .js --ignore-path .gitignore .",
+    "lint": "eslint --ext .js --ignore-path .gitignore .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "eslint": "^8.24.0",
-    "eslint-plugin-compat": "^4.0.2"
+    "eslint-plugin-compat": "^4.0.2",
+    "eslint-plugin-jsdoc": "^39.3.6"
   },
-	"browserslist": [
-		">= 0.5%",
-		"last 2 major versions",
-		"Firefox ESR",
-		"not dead",
-		"not ios_saf < 15",
-		"not op_mini all"
-	],
-	"keywords": [
-		"utilities"
-	]
+  "browserslist": [
+    ">= 0.5%",
+    "last 2 major versions",
+    "Firefox ESR",
+    "not dead",
+    "not ios_saf < 15",
+    "not op_mini all"
+  ],
+  "keywords": [
+    "utilities"
+  ]
 }
