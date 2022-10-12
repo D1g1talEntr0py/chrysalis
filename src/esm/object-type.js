@@ -2,7 +2,7 @@
 
 /**
  * Gets the object type for the current instance.
- * 
+ *
  * @param {*} object The object to check
  * @returns {Type} The object type
  */
