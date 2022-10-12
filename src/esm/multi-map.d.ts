@@ -42,7 +42,7 @@ export default class MultiMap<K, V> extends Map<K, V> {
     forEach(callbackfn: (value: Set<V>, key: K, multiMap: MultiMap<K, V>) => void, thisArg?: any): void;
 
     /** Returns an iterable of entries in the MultiMap. */
-    [Symbol.iterator](): IterableIterator<[K, <Set<V>]>;
+    [Symbol.iterator](): IterableIterator<[K, Set<V>]>;
 }
 
 // export type MultiMap<K, Set<V>> = Map<K, Set<V>>;
