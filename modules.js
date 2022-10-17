@@ -7,7 +7,6 @@ export { default as _toggleElementClasses } from './src/esm/element-toggle-class
 export { default as _delegateEventListener } from './src/esm/event-target-delegate.js';
 export { injectLink, injectScript, injectStyleSheet } from './src/esm/inject-tag.js';
 export { default as _mapIsEmpty } from './src/esm/map-is-empty.js';
-export { default as MultiMap } from './src/esm/multi-map.js';
 export { default as _isType } from './src/esm/object-is-type.js';
 export { default as _objectMerge } from './src/esm/object-merge.js';
 export { default as _type } from './src/esm/object-type.js';
