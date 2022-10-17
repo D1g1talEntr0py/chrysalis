@@ -1,10 +1,18 @@
-node_modules
-dist
-
 ### VisualStudioCode ###
 .vscode/**/*
 !.vscode/settings.json
-tests/scratch.js
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+dist
+node_modules
 
 /coverage/
-/test/web-platform-tests/*
