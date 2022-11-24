@@ -15,3 +15,5 @@ export { default as _setIsEmpty } from './src/esm/set-is-empty.js';
 export { default as _stringIsBlank } from './src/esm/string-is-blank.js';
 export { default as _stringIsEmpty } from './src/esm/string-is-empty.js';
 export { default as StringTemplate } from './src/esm/string-template.js';
+export { default as _hexToAscii } from './src/esm/hex-to-ascii.js';
+export { default as _asciiToHex } from './src/esm/ascii-to-hex.js';
