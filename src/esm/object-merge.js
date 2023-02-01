@@ -7,21 +7,22 @@ import _isType from './object-is-type.js';
  * @returns {Object} The merged object
  */
 const _objectMerge = (...objects) => {
-	return objects.reduce((prev, obj) => {
-		Object.keys(obj).forEach(key => {
-			const pVal = prev[key];
-			const oVal = obj[key];
-
-			if (Array.isArray(pVal) && Array.isArray(oVal)) {
-				prev[key] = [...new Set([...oVal, ...pVal])];
-			}	else if (_isType(pVal, Object) && _isType(oVal, Object)) {
-				prev[key] = _objectMerge(pVal, oVal);
-			}	else {
-				prev[key] = oVal;
+	return objects.reduce((previousValue, currentValue) => {
+		for (const [key, value] of Object.entries(currentValue)) {
+			switch (true) {
+				case Array.isArray(value) && Array.isArray(previousValue[key]): {
+					previousValue[key] = [...new Set([...value, ...previousValue[key]])];
+					break;
+				}
+				case _isType(value, Object) && _isType(previousValue[key], Object): {
+					previousValue[key] = _objectMerge(previousValue[key], value);
+					break;
+				}
+				default: previousValue[key] = value;
 			}
-		});
+		}
 
-		return prev;
+		return previousValue;
 	}, {});
 };
 
