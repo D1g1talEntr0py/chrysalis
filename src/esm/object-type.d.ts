@@ -8,3 +8,4 @@ export type Type = Object.prototype.constructor;
  * @returns {Type} The object type
  */
 declare function _type(object: any): Object.prototype.constructor;
+//# sourceMappingURL=object-type.d.ts.map

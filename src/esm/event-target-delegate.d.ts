@@ -10,3 +10,4 @@ export default _delegateEventListener;
  * @returns {EventListener} The event listener use to filter and call the supplied listener.
  */
 declare function _delegateEventListener(eventTarget: EventTarget, eventType: string, selector: string, listener: EventListener, options?: boolean | AddEventListenerOptions): EventListener;
+//# sourceMappingURL=event-target-delegate.d.ts.map

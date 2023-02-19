@@ -6,3 +6,4 @@ export default _stringIsBlank;
  * @returns {boolean} true if the string is all blanks, false otherwise.
  */
 declare function _stringIsBlank(string: string): boolean;
+//# sourceMappingURL=string-is-blank.d.ts.map

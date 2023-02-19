@@ -6,3 +6,4 @@ export default _setIsEmpty;
  * @returns {boolean} true if the {@link Set} is empty, false otherwise.
  */
 declare function _setIsEmpty(set: Set<any>): boolean;
+//# sourceMappingURL=set-is-empty.d.ts.map

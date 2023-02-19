@@ -21,3 +21,4 @@ export default class StringTemplate {
      */
     format(data: any): string;
 }
+//# sourceMappingURL=string-template.d.ts.map

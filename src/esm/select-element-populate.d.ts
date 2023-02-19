@@ -6,3 +6,4 @@ export default _selectElementPopulate;
  * @param {Array<HTMLOptionElement>} options The array of {@link HTMLOptionElement} objects.
  */
 declare function _selectElementPopulate(htmlSelectElement: HTMLSelectElement, options: Array<HTMLOptionElement>): void;
+//# sourceMappingURL=select-element-populate.d.ts.map

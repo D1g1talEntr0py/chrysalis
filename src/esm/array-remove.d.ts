@@ -5,7 +5,8 @@ export default _arrayRemove;
  *
  * @param {Array} array The array to remove from
  * @param {number} from Starting position
- * @param {number?} to Ending position
+ * @param {number} [to=from] Ending position
  * @returns {number} The new length of the array
  */
-declare function _arrayRemove(array: any[], from: number, to: number | null): number;
+declare function _arrayRemove(array: any[], from: number, to?: number): number;
+//# sourceMappingURL=array-remove.d.ts.map

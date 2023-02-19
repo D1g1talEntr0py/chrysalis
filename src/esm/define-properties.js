@@ -13,7 +13,7 @@
 const _defineProperties = (object, propertyKeys, { configurable = true, enumerable = false, writable = false } = {}, override = false) => {
 	for (const [ property, value ] of Object.entries(propertyKeys)) {
 		if (override || !object.hasOwnProperty(property)) {
-			Object.defineProperty(object, property, {	configurable: configurable,	enumerable: enumerable,	writable: writable,	value: value });
+			Object.defineProperty(object, property, {	configurable,	enumerable,	writable,	value });
 		}
 	}
 };

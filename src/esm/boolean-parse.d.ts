@@ -6,3 +6,4 @@ export default _booleanParse;
  * @returns {boolean} true if the string is "true" and false if the string is "false". If not either of those, an error is thrown.
  */
 declare function _booleanParse(value: string): boolean;
+//# sourceMappingURL=boolean-parse.d.ts.map

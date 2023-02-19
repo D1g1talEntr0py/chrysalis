@@ -33,3 +33,4 @@ export function injectLink(href: string, rel: string, { type, media, onload }?: 
  * @returns {undefined}
  */
 export function injectStyleSheet(href: any, onload?: (arg0: Event) => any): undefined;
+//# sourceMappingURL=inject-tag.d.ts.map

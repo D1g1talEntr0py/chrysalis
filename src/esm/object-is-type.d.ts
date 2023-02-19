@@ -9,3 +9,4 @@ export type Type = Object.prototype.constructor;
  * @returns {boolean} true if the provided instance is the type provided, false otherwise.
  */
 declare function _isType(object: any, type: Object.prototype.constructor): boolean;
+//# sourceMappingURL=object-is-type.d.ts.map

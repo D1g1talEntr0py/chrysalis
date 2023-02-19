@@ -19,9 +19,9 @@
  * @returns {HexString} The Hexadecimal string
  */
 const _asciiToHex = (value) => {
-	const hex = [];
-	for (let index = 0, length = value.length; index < length; index++) {
-		hex.push(Number(value.charCodeAt(index)).toString(16));
+	const length = value.length, hex = new Array(length);
+	for (let index = 0; index < length; index++) {
+		hex[index] = Number(value.charCodeAt(index)).toString(16);
 	}
 
 	return hex.join('');

@@ -6,3 +6,4 @@ export default _arrayIsEmpty;
  * @returns {boolean} true if the array is empty, false otherwise.
  */
 declare function _arrayIsEmpty(array: any[]): boolean;
+//# sourceMappingURL=array-is-empty.d.ts.map

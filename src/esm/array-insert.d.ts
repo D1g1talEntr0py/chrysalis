@@ -7,3 +7,4 @@ export default _arrayInsert;
  * @param {string} [property] The name of the property to use as the compare if the entry is an Object.
  */
 declare function _arrayInsert(array: any[], entry: any, property?: string): void;
+//# sourceMappingURL=array-insert.d.ts.map

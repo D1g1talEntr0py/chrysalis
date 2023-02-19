@@ -13,3 +13,4 @@ export type ClassListEntry = {
  * @param {...(ClassListEntry|string)} classListEntries The list of class entries or class names to toggle.
  */
 declare function _toggleElementClasses(element: Element, ...classListEntries: (ClassListEntry | string)[]): void;
+//# sourceMappingURL=element-toggle-classes.d.ts.map

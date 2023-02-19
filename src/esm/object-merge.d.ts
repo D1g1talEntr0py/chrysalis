@@ -6,3 +6,4 @@ export default _objectMerge;
  * @returns {Object} The merged object
  */
 declare function _objectMerge(...objects: any[]): any;
+//# sourceMappingURL=object-merge.d.ts.map

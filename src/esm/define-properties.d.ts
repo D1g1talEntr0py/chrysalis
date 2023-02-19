@@ -12,3 +12,4 @@ export default _defineProperties;
  * @param {boolean} [override=false] Controls whether or not the property will replace an existing property with the same name.
  */
 declare function _defineProperties(object: any, propertyKeys: any, { configurable, enumerable, writable }?: PropertyDescriptor, override?: boolean): void;
+//# sourceMappingURL=define-properties.d.ts.map
