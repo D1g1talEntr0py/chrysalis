@@ -7,10 +7,10 @@
  * @param  {...string} chars The characters to insert.
  * @returns {string} A new string with the characters inserted at the specified index.
  */
-const _splice = (string, start, ...chars) => {
+const _stringSplice = (string, start, ...chars) => {
 	const charArray = Array.from(string);
 	charArray.splice(start, 0, ...chars);
 	return charArray.join('');
 };
 
-export default _splice;
+export default _stringSplice;

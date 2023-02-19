@@ -1,5 +1,5 @@
 import _defineProperties from '../esm/define-properties.js';
-import _splice from '../esm/string-splice.js';
+import _stringSplice from '../esm/string-splice.js';
 
 _defineProperties(String.prototype, {
 	/**
@@ -13,6 +13,6 @@ _defineProperties(String.prototype, {
 	 * @returns {string} A new string with the characters inserted at the specified index.
 	 */
 	splice(start, ...chars) {
-		return _splice(this, start, ...chars);
+		return _stringSplice(this, start, ...chars);
 	}
 });
