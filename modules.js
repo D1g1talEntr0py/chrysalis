@@ -18,3 +18,4 @@ export { default as _stringSplice } from './src/esm/string-splice.js';
 export { default as StringTemplate } from './src/esm/string-template.js';
 export { default as _hexToAscii } from './src/esm/hex-to-ascii.js';
 export { default as _asciiToHex } from './src/esm/ascii-to-hex.js';
+export { default as _isIterable } from './src/esm/is-iterable.js';
