@@ -1,6 +1,6 @@
 {
   "name": "@d1g1tal/chrysalis",
-  "version": "1.1.16",
+  "version": "1.1.17",
   "author": "Jason DiMeo",
   "license": "MIT",
   "description": "JavaScript Utility Modules and Extensions",
@@ -12,7 +12,6 @@
     "access": "public"
   },
   "type": "module",
-  "types": "./modules.d.ts",
   "exports": {
     ".": {
       "import": "./modules.js"
@@ -24,7 +23,6 @@
   "files": [
     "/src/**/*",
     "./modules.js",
-    "./modules.d.ts",
     "./extensions.js"
   ],
   "scripts": {
