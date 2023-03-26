@@ -9,6 +9,7 @@ export { injectLink, injectScript, injectStyleSheet } from './src/esm/inject-tag
 export { default as _mapIsEmpty } from './src/esm/map-is-empty.js';
 export { default as _isType } from './src/esm/object-is-type.js';
 export { default as _objectMerge } from './src/esm/object-merge.js';
+export { default as _objectIsEmpty } from './src/esm/object-is-empty.js';
 export { default as _type } from './src/esm/object-type.js';
 export { default as _selectElementPopulate } from './src/esm/select-element-populate.js';
 export { default as _setIsEmpty } from './src/esm/set-is-empty.js';
