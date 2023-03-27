@@ -1,4 +1,4 @@
-import _isType from './object-is-type.js';
+import _type from './object-type.js';
 
 /**
  * Performs a deep merge of multiple objects.
@@ -7,23 +7,27 @@ import _isType from './object-is-type.js';
  * @returns {Object} The merged object
  */
 const _objectMerge = (...objects) => {
-	return objects.reduce((previousValue, currentValue) => {
-		for (const [key, value] of Object.entries(currentValue)) {
-			switch (true) {
-				case Array.isArray(value) && Array.isArray(previousValue[key]): {
-					previousValue[key] = [...new Set([...value, ...previousValue[key]])];
-					break;
+	const target = {};
+	for (const source of objects) {
+		if (_type(source) != Object) return undefined;
+
+		let descriptor, sourceType;
+		for (const property of Object.getOwnPropertyNames(source)) {
+			descriptor = Object.getOwnPropertyDescriptor(source, property);
+			if (descriptor.enumerable) {
+				sourceType = _type(source[property]);
+				if (sourceType == Object) {
+					descriptor.value = _type(target[property]) == Object ? _objectMerge(target[property], source[property]) : { ...source[property] };
+				} else if (sourceType == Array) {
+					descriptor.value = Array.isArray(target[property]) ? [ ...new Set([ ...source[property], ...target[property] ]) ] : [ ...source[property] ];
 				}
-				case _isType(value, Object) && _isType(previousValue[key], Object): {
-					previousValue[key] = _objectMerge(previousValue[key], value);
-					break;
-				}
-				default: previousValue[key] = value;
+
+				target[property] = descriptor.value;
 			}
 		}
+	}
 
-		return previousValue;
-	}, {});
+	return target;
 };
 
 export default _objectMerge;
