@@ -3,14 +3,15 @@ import _defineProperties from '../esm/define-properties.js';
 
 _defineProperties(Array.prototype, {
 	/**
-	 * Inserts the entry in a sorted array in the correct position. The array must be sorted in ascending order to work
+	 * Inserts an entry into the array at the specified index
 	 *
 	 * @memberof Array.prototype
 	 * @name insert
-	 * @param {*} entry - The entry to add to the array
-	 * @param {string} [property] - The name of the property to use as the compare if the entry is an Object
+	 * @param {*} index The index to insert the entry at
+	 * @param {...string} entries The entries to add to the array
+	 * @returns {Array} The array
 	 */
-	insert(entry, property) {
-		_arrayInsert(this, entry, property);
+	insert(index, ...entries) {
+		return _arrayInsert(this, index, ...entries);
 	}
 });

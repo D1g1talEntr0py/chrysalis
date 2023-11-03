@@ -1,5 +1,5 @@
 import { describe, expect, test } from '@jest/globals';
-import { _objectMerge, _arrayRemove } from '../modules.js';
+import { _arrayRemove, _objectMerge } from '../index.js';
 
 describe('_objectMerge', () => {
 	const config = { headers: { Accept: ['application/json'] } };

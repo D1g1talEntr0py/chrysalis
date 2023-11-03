@@ -10,14 +10,10 @@
  */
 const _isConstructable = (value) => {
 	try {
-		Reflect.construct(value, []);
-	} catch (error) {
-		if (error instanceof TypeError && error.message.endsWith('is not a constructor')) {
-			return false;
-		}
-	}
+		return value !== Symbol && !!Reflect.construct(String, [], value);
+	} catch (error) { /* empty */ }
 
-	return true;
+	return false;
 };
 
 export default _isConstructable;

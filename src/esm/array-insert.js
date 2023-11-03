@@ -1,31 +1,30 @@
+import _type from './object-type.js';
+
 /**
- * Inserts the entry in a sorted array in the correct position. The array must be sorted in ascending order to work
+ * Insert one or more items into an array at the specified index
  *
- * @param {Array} array The Array to insert an entry.
- * @param {*} entry The entry to add to the array.
- * @param {string} [property] The name of the property to use as the compare if the entry is an Object.
+ * @param {Array<*>} array The array to insert into
+ * @param {number} index The index to insert at
+ * @param {Array<*>} entries The items to insert
+ * @returns {Array<*>} The array with the items inserted
  */
-const _arrayInsert = (array, entry, property) => {
-	let left = 0;
-	let right = array.length - 1, middle, current;
-	const value = property ? entry[property] : entry;
-	for (; left <= right;) {
-		// Bitwise OR operator to get the middle of the array. Floating point numbers will be truncated.
-		middle = (left + right) / 2 | 0;
-		current = property ? array[middle][property] : array[middle];
-		// If entry value to be added is less than the current value, then the insertion point must be before the current middle index.
-		if (value < current) {
-			right = middle - 1;
-			continue;
-		}
-		left = middle + 1;
-		// If the entry value is equal to the current value, do the insert.
-		if (value === current) {
-			break;
-		}
+const _arrayInsert = (array, index, ...entries) => {
+	if (!Array.isArray(array)) {
+		throw new TypeError('First argument must be an array');
 	}
 
-	array.splice(left, 0, entry);
+	if (_type(index) != Number) {
+		throw new TypeError('Second argument must be a number');
+	}
+
+	if (index < -1 || index > array.length) {
+		throw new RangeError('Index is out of bounds');
+	}
+
+	// splice() modifies the original array and is generally efficient. If index is -1, insert the items at the end
+	array.splice(index == -1 ? array.length : index, 0, ...entries);
+
+	return array;
 };
 
 export default _arrayInsert;

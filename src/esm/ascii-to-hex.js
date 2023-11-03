@@ -13,7 +13,7 @@
  */
 
 /**
- * Encodes an ASCII string to a Hexidecimal string.
+ * Encodes an ASCII string to a Hexadecimal string.
  *
  * @param {string} value - The ASCII string to encode
  * @returns {HexString} The Hexadecimal string

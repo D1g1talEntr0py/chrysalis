@@ -6,7 +6,7 @@
  * @param {boolean} [attributes.async=false] The optional async attribute.
  * @param {function(Event)} [attributes.onload=() => {}] The optional onload event handler function.
  */
-const injectScript = (src, { async = false, onload = () => {} } = {}) => {
+const _injectScript = (src, { async = false, onload = () => {} } = {}) => {
 	const script = document.createElement('script');
 	script.type = 'text/javascript';
 	script.src = src;
@@ -26,7 +26,7 @@ const injectScript = (src, { async = false, onload = () => {} } = {}) => {
  * @param {string} [attributes.media] The optional media attribute.
  * @param {function(Event)} [attributes.onload=() => {}] The optional onload event handler function.
  */
-const injectLink = (href, rel, { type, media, onload = () => {} } = {}) => {
+const _injectLink = (href, rel, { type, media, onload = () => {} } = {}) => {
 	const link = document.createElement('link');
 	link.href = href;
 	link.rel = rel;
@@ -44,6 +44,6 @@ const injectLink = (href, rel, { type, media, onload = () => {} } = {}) => {
  * @param {function(Event)} [onload] The optional onload event handler function.
  * @returns {undefined}
  */
-const injectStyleSheet = (href, onload) => injectLink(href, 'stylesheet', { type: 'text/css', onload });
+const _injectStyleSheet = (href, onload) => _injectLink(href, 'stylesheet', { type: 'text/css', onload });
 
-export { injectScript, injectLink, injectStyleSheet };
+export { _injectScript, _injectLink, _injectStyleSheet };

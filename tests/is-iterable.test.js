@@ -1,4 +1,4 @@
-import { _isIterable } from '../modules';
+import { _isIterable } from '../index.js';
 import { describe, it, expect } from '@jest/globals';
 
 describe('_isIterable', () => {

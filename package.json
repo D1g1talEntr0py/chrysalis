@@ -1,8 +1,8 @@
 {
   "name": "@d1g1tal/chrysalis",
-  "version": "1.2.3",
+  "version": "2.2.0",
   "author": "Jason DiMeo",
-  "license": "MIT",
+  "license": "ISC",
   "description": "JavaScript Utility Modules and Extensions",
   "repository": {
     "type": "git",
@@ -12,29 +12,36 @@
     "access": "public"
   },
   "type": "module",
+  "engines": {
+    "node": ">=16.20.2"
+  },
   "exports": {
-    ".": {
-      "import": "./modules.js"
-    },
-    "./ext/*": {
-      "import": "./src/ext/*"
-    }
+    ".": "./index.js",
+    "./*": "./src/esm/*",
+    "./proto/*": "./src/ext/*",
+    "./dist/*": "./dist/*"
   },
   "files": [
     "/src/**/*",
-    "./modules.js",
+    "/dist/**/*",
+    "./index.js",
     "./extensions.js"
   ],
   "scripts": {
+    "build": "node ./esbuild.js",
     "lint": "eslint --ext .js --ignore-path .gitignore .",
-    "d.ts": "tsc --allowJs -declaration --emitDeclarationOnly --declarationMap --skipLibCheck --lib esnext modules.js",
+    "d.ts": "tsc --allowJs -declaration --emitDeclarationOnly --declarationMap --skipLibCheck --lib esnext index.js",
     "test": "node --no-warnings --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
+  "packageManager": "pnpm@8.10.2+sha256.487609e857f1c11780cc98dd0bfe4c8a8b11c7f23bc3a4493ac7d263d6fb6c8c",
   "devDependencies": {
-    "eslint": "^8.39.0",
-    "eslint-plugin-compat": "^4.1.4",
-    "eslint-plugin-jsdoc": "^43.1.1",
-    "jest": "^29.5.0"
+    "esbuild": "^0.19.5",
+    "esbuild-library": "^1.0.1",
+    "eslint": "^8.52.0",
+    "eslint-plugin-compat": "^4.2.0",
+    "eslint-plugin-jsdoc": "^46.8.2",
+    "jest": "^29.7.0",
+    "jsdom": "^22.1.0"
   },
   "browserslist": [
     "defaults",
@@ -44,6 +51,9 @@
   "jest": {
     "verbose": true,
     "transform": {},
+    "fakeTimers": {
+      "enableGlobally": true
+    },
     "coverageDirectory": "./tests/coverage/",
     "coveragePathIgnorePatterns": [
       ".d.ts",
