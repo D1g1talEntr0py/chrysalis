@@ -15,6 +15,7 @@
 		"jsdoc/tag-lines": 0,
 		"jsdoc/no-defaults": 0,
 		"no-prototype-builtins": "off",
+		"no-control-regex": "off",
 		"indent": [
 			"error",
 			"tab",

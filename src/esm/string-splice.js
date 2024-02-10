@@ -10,6 +10,7 @@
 const _stringSplice = (string, start, ...chars) => {
 	const charArray = Array.from(string);
 	charArray.splice(start, 0, ...chars);
+	
 	return charArray.join('');
 };
 

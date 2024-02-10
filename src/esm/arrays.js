@@ -1,6 +1,8 @@
 import _arrayIsEmpty from './array-is-empty.js';
 import _arrayRemove from './array-remove.js';
 import _arrayInsert from './array-insert.js';
+import _arrayInsertionSort from './array-insertion-sort.js';
+import _isTypedArray from './array-is-typed.js';
 
 export default class Arrays {
 	/**
@@ -17,6 +19,17 @@ export default class Arrays {
 	}
 
 	/**
+	 * Sorts an array using the insertion sort algorithm
+	 *
+	 * @static
+	 * @param {Array<*>} array The array to sort
+	 * @returns {Array<*>} The sorted array
+	 */
+	static insertionSort(array) {
+		return _arrayInsertionSort(array);
+	}
+
+	/**
 	 * Checks if an array is empty
 	 *
 	 * @static
@@ -25,6 +38,20 @@ export default class Arrays {
 	 */
 	static isEmpty(array) {
 		return _arrayIsEmpty(array);
+	}
+
+	/**
+	 * Checks if the value is a typed array.
+	 *
+	 * @static
+	 * @param {any} array The value to check.
+	 * @returns {boolean} Returns `true` if the value is a typed array, otherwise `false`.
+	 * @example
+	 * Arrays.isTyped(new Uint8Array()); // => true
+	 * Arrays.isTyped([]); // => false
+	 */
+	static isTyped(array) {
+		return _isTypedArray(array);
 	}
 
 	/**

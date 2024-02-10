@@ -1,7 +1,12 @@
 export { default as _arrayIsEmpty } from './src/esm/array-is-empty.js';
 export { default as _arrayRemove } from './src/esm/array-remove.js';
 export { default as _arrayInsert } from './src/esm/array-insert.js';
+export { default as _insertionSort } from './src/esm/array-insertion-sort.js';
+export { default as _isTypedArray } from './src/esm/array-is-typed.js';
 export { default as Arrays } from './src/esm/arrays.js';
+export { default as _debounce } from './src/esm/debounce.js';
+export { default as _throttle } from './src/esm/throttle.js';
+export { default as _equals } from './src/esm/equals.js';
 export { default as _asciiToHex } from './src/esm/ascii-to-hex.js';
 export { default as _booleanParse } from './src/esm/boolean-parse.js';
 export { default as _defineProperties } from './src/esm/define-properties.js';
@@ -28,3 +33,4 @@ export { default as _stringIsEmpty } from './src/esm/string-is-empty.js';
 export { default as _stringSplice } from './src/esm/string-splice.js';
 export { default as StringTemplate } from './src/esm/string-template.js';
 export { default as Strings } from './src/esm/strings.js';
+export { default as _memoize } from './src/esm/memoize.js';
