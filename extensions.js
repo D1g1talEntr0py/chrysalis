@@ -1,3 +1,4 @@
+export * from './src/ext/abort-signal.any-polyfill.js';
 export * from './src/ext/array-insert.js';
 export * from './src/ext/array-is-empty.js';
 export * from './src/ext/array-remove.js';
